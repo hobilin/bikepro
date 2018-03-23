@@ -41,6 +41,7 @@ class App extends Component {
       return(
           <div className="App">
 
+<Router>
             <Route path="/" exact strict render={
               () => {
                 return(
@@ -51,6 +52,8 @@ class App extends Component {
                 )
               }
             } />
+            </Router>
+            <Router>
             <Route path="/profile" exact strict render={
               () => {
                 return(
@@ -61,16 +64,20 @@ class App extends Component {
                 )
               }
             } />
+            </Router>
+            <Router>
             <Route path="/bikes" exact strict render={
               () => {
                 return(
                   <div>
                     <TopMenu />
-                    <div className="relleno"> Acá cargan las bicis en el mapa c:</div>
+                    <Bici/>
                   </div>
                 )
               }
             } />
+            </Router>
+            <Router>
             <Route path="/parking" exact strict render={
               () => {
                 return(
@@ -81,6 +88,8 @@ class App extends Component {
                 )
               }
             } />
+            </Router>
+            <Router>
             <Route path="/report" exact strict render={
               () => {
                 return(
@@ -90,13 +99,15 @@ class App extends Component {
                   </div>
                 )
               }
-            } />*
+            } />
+            </Router>
             <Login
               user={this.state.user}
               onAuth={this.handleAuth}
               onLogout={this.handleLogout}
             />
           </div>
+
       );
     }else{
       return(
