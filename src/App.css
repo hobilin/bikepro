@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+.col-12 {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+.relleno{
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+}

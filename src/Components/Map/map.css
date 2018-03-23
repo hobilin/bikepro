@@ -1,0 +1,26 @@
+.map-height{
+  height: 100vh;
+}
+canvas.mapboxgl-canvas{
+  position: relative !important;
+  width: 100vw !important;
+}
+
+.address {
+  font-size: 2em;
+  color: #FF9A19;
+}
+
+.bici, .space, .alerta {
+  font-size: 1em;
+  color: #524F4F;
+}
+
+.fa-bicycle, .fa-exclamation-circle {
+  color: #FDB55A;
+  font-size: 2em;
+}
+
+.icon-cont {
+  padding: 1em;
+}
